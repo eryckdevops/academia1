@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane styleClass="parent" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="control.TelaCadastroFornecedorController">
+   <top>
+      <BorderPane prefHeight="75.0" prefWidth="1055.0" BorderPane.alignment="CENTER">
+         <center>
+            <BorderPane BorderPane.alignment="CENTER">
+               <center>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+                     <center>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="740.0" text="Formulário de Cadastro de Fornecedor" textFill="#009df8" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Calibri Light" size="25.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                           <padding>
+                              <Insets right="50.0" />
+                           </padding>
+                        </Label>
+                     </center>
+                     <left>
+                        <FontAwesomeIconView fill="#f4b403" glyphName="USER" size="4em" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets left="20.0" />
+                           </BorderPane.margin>
+                        </FontAwesomeIconView>
+                     </left>
+                     <effect>
+                        <DropShadow height="15.0" radius="5.75" width="10.0" />
+                     </effect>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+         </center>
+         <left>
+            <Label blendMode="MULTIPLY" prefHeight="75.0" prefWidth="300.0" style="-fx-background-color: #00A2D3;" text="Sistema Gerenciador de Academia" textFill="#00fff9" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+            </Label>
+         </left>
+      </BorderPane>
+   </top>
+   <left>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="parent" stylesheets="@StyleSheet.css" BorderPane.alignment="CENTER">
+         <center>
+            <VBox prefHeight="600.0" prefWidth="300.0" styleClass="sidebar" stylesheets="@StyleSheet.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="105.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="HOME" glyphStyle="-fx-fill:#7C8184" size="1.3em" />
+                        <Label text="Home" textFill="#7c8184">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Light" size="21.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <effect>
+                        <GaussianBlur radius="3.25" />
+                     </effect>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="PENCIL_SQUARE_ALT" glyphStyle="-fx-fill:#f4b403" size="1.3em" />
+                        <Label text="Cadastrar" textFill="#f4b403">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Light" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <effect>
+                        <Glow level="0.5" />
+                     </effect>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="SEARCH" glyphStyle="-fx-fill:#7C8184" size="1.3em" />
+                        <Label text="Consultar" textFill="#7c8184">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Light" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <effect>
+                        <GaussianBlur radius="3.25" />
+                     </effect>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="CREDIT_CARD" glyphStyle="-fx-fill:#7C8184" size="1.3em" />
+                        <Label text="Pagamento" textFill="#7c8184">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Light" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <effect>
+                        <GaussianBlur radius="3.25" />
+                     </effect>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="172.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="CHECK_SQUARE_ALT" glyphStyle="-fx-fill:#7C8184" size="1.3em" />
+                        <Label text="Autorizar Acesso" textFill="#7c8184">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Light" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <effect>
+                        <GaussianBlur radius="3.25" />
+                     </effect>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="212.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="ALIGN_LEFT" glyphStyle="-fx-fill:#7C8184" size="1.3em" />
+                        <Label text="Relatório" textFill="#7c8184">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Light" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <effect>
+                        <GaussianBlur radius="3.25" />
+                     </effect>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="sidebar" stylesheets="@StyleSheet.css" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </left>
+   <center>
+      <BorderPane BorderPane.alignment="CENTER">
+         <bottom>
+            <BorderPane prefHeight="67.0" prefWidth="755.0" BorderPane.alignment="CENTER">
+               <center>
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#clickCancelar" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #ddd;" text="Cancelar" textFill="#000203" BorderPane.alignment="CENTER_RIGHT">
+                     <BorderPane.margin>
+                        <Insets right="40.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font name="Calibri Light" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </center>
+               <right>
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#clickSalvar" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #00A2D3;" text="Salvar" textFill="WHITE" BorderPane.alignment="CENTER_RIGHT">
+                     <BorderPane.margin>
+                        <Insets right="40.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font name="Calibri Light" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </right>
+            </BorderPane>
+         </bottom>
+         <center>
+            <GridPane BorderPane.alignment="TOP_LEFT">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXTextField fx:id="txtRazaoSocial" focusColor="#f4b403" labelFloat="true" promptText="Razão Social" scaleShape="false" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Estrangelo Edessa" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtCnpj" focusColor="#f4b403" labelFloat="true" promptText="CNPJ" unFocusColor="BLACK" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Estrangelo Edessa" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtTelefone" focusColor="#f4b403" labelFloat="true" promptText="Telefone" unFocusColor="BLACK" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Estrangelo Edessa" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtCelular" focusColor="#f4b403" labelFloat="true" promptText="Celular" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Estrangelo Edessa" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtEmail" focusColor="#f4b403" labelFloat="true" promptText="Email" unFocusColor="BLACK" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Estrangelo Edessa" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtBairro" focusColor="#f4b403" labelFloat="true" promptText="Bairro" unFocusColor="BLACK" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Estrangelo Edessa" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtCep" focusColor="#f4b403" labelFloat="true" promptText="CEP" unFocusColor="BLACK" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Estrangelo Edessa" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtEndereco" focusColor="#f4b403" labelFloat="true" promptText="Endereço" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Estrangelo Edessa" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtCidade" focusColor="#f4b403" labelFloat="true" promptText="Cidade" unFocusColor="BLACK" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Estrangelo Edessa" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="comboBoxEstado" focusColor="#f4b403" labelFloat="true" prefWidth="170.0" promptText="Estado" unFocusColor="BLACK" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets left="20.0" top="10.0" />
+                     </padding>
+                  </JFXComboBox>
+                  <Label fx:id="lblRazaoSocial">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="60.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Estrangelo Edessa" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCnpj" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="60.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Estrangelo Edessa" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTelefone" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="60.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Estrangelo Edessa" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCelular" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="60.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Estrangelo Edessa" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblEmail" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="60.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Estrangelo Edessa" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCep" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="60.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Estrangelo Edessa" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblBairro" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="60.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Estrangelo Edessa" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblEstado" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="60.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Estrangelo Edessa" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCidade" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="60.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Estrangelo Edessa" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblEndereco" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="60.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Estrangelo Edessa" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

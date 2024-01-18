@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="375.0" prefWidth="604.0" styleClass="start-border" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="control.StartController">
+   <children>
+      <HBox layoutX="10.0" prefHeight="47.0" prefWidth="603.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="47.0" prefWidth="628.0" text="Sistema Gerenciador de Academia" textFill="#0571dd">
+               <font>
+                  <Font name="Calibri Light" size="25.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="134.0" layoutY="47.0" prefHeight="306.0" prefWidth="249.0" stylesheets="@StyleSheet.css" AnchorPane.rightAnchor="180.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="262.0" prefWidth="249.0" styleClass="round-box" stylesheets="@StyleSheet.css">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <ProgressIndicator prefHeight="236.0" prefWidth="206.0" />
+               </children>
+            </HBox>
+            <Label fx:id="lblInformacao" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="263.0" text="Inicializando o Sistema" textFill="#f4c471">
+               <font>
+                  <Font name="Calibri Light" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

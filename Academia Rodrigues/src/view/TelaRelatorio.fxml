@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane styleClass="parent" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.TelaRelatorioController">
+   <top>
+      <BorderPane prefHeight="75.0" prefWidth="1055.0" BorderPane.alignment="CENTER">
+         <center>
+            <BorderPane BorderPane.alignment="CENTER">
+               <center>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+                     <center>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="740.0" text="Relatórios" textFill="#7c8184" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Calibri Light" size="25.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                           <padding>
+                              <Insets right="50.0" />
+                           </padding>
+                        </Label>
+                     </center>
+                     <left>
+                        <FontAwesomeIconView glyphName="ALIGN_LEFT" size="4em" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets left="20.0" />
+                           </BorderPane.margin>
+                        </FontAwesomeIconView>
+                     </left>
+                     <effect>
+                        <DropShadow height="15.0" radius="5.75" width="10.0" />
+                     </effect>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+         </center>
+         <left>
+            <Label blendMode="MULTIPLY" prefHeight="75.0" prefWidth="300.0" style="-fx-background-color: #00A2D3;" text="Sistema Gerenciador de Academia" textFill="#00fff9" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+            </Label>
+         </left>
+      </BorderPane>
+   </top>
+   <left>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="parent" stylesheets="@StyleSheet.css" BorderPane.alignment="CENTER">
+         <center>
+            <VBox prefHeight="600.0" prefWidth="300.0" styleClass="sidebar" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="105.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clickHome" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                     <children>
+                        <FontAwesomeIconView glyphName="HOME" glyphStyle="-fx-fill:#7C8184" size="1.3em" />
+                        <Label text="Home" textFill="#7c8184">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Light" size="21.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clickCadastrar" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                     <children>
+                        <FontAwesomeIconView glyphName="PENCIL_SQUARE_ALT" glyphStyle="-fx-fill:#7c8184" size="1.3em" />
+                        <Label text="Cadastrar" textFill="#7c8184">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Light" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clickConsultar" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                     <children>
+                        <FontAwesomeIconView glyphName="SEARCH" glyphStyle="-fx-fill:#7C8184" size="1.3em" />
+                        <Label text="Consultar" textFill="#7c8184">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Light" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clickPagamento" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                     <children>
+                        <FontAwesomeIconView glyphName="CREDIT_CARD" glyphStyle="-fx-fill:#7C8184" size="1.3em" />
+                        <Label text="Pagamento" textFill="#7c8184">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Light" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="172.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clickAutorizarAcesso" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                     <children>
+                        <FontAwesomeIconView glyphName="CHECK_SQUARE_ALT" glyphStyle="-fx-fill:#7C8184" size="1.3em" />
+                        <Label onMouseClicked="#clickAutorizarAcesso" text="Autorizar Acesso" textFill="#7c8184">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Light" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="212.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+                     <children>
+                        <FontAwesomeIconView glyphName="ALIGN_LEFT" glyphStyle="-fx-fill:#f4b403" size="1.3em" />
+                        <Label text="Relatório" textFill="#f4b403">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Light" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="sidebar" stylesheets="@StyleSheet.css" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </left>
+   <center>
+      <BorderPane BorderPane.alignment="CENTER">
+         <center>
+            <BorderPane prefHeight="585.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+               <top>
+                  <VBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clickRelatorioVenda" prefHeight="175.0" prefWidth="300.0" styleClass="painel" stylesheets="@StyleSheet.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <FontAwesomeIconView glyphName="CART_ARROW_DOWN" size="4em" />
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="368.0" text="Relatório de Venda">
+                           <font>
+                              <Font name="Calibri Light" size="25.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="50.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <BorderPane.margin>
+                        <Insets left="30.0" top="30.0" />
+                     </BorderPane.margin>
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0" />
+                     </effect>
+                  </VBox>
+               </top>
+               <center>
+                  <VBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clickRelatorioUltimoAcesso" prefHeight="175.0" prefWidth="300.0" styleClass="painel" stylesheets="@StyleSheet.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <FontAwesomeIconView glyphName="CALENDAR_CHECK_ALT" size="4em">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin></FontAwesomeIconView>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="372.0" text="Relatório de Último Acesso">
+                           <font>
+                              <Font name="Calibri Light" size="25.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="50.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <BorderPane.margin>
+                        <Insets left="30.0" />
+                     </BorderPane.margin>
+                     <effect>
+                        <DropShadow height="15.0" radius="7.0" width="15.0" />
+                     </effect>
+                  </VBox>
+               </center>
+               <bottom>
+                  <VBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clickRelatorioRecebimento" prefHeight="175.0" prefWidth="300.0" styleClass="painel" stylesheets="@StyleSheet.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <FontAwesomeIconView glyphName="MONEY" size="4em" />
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="388.0" text="Relatório de Recebimento">
+                           <font>
+                              <Font name="Calibri Light" size="25.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="50.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <BorderPane.margin>
+                        <Insets bottom="30.0" left="30.0" />
+                     </BorderPane.margin>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" height="15.0" radius="7.0" width="15.0" />
+                     </effect>
+                  </VBox>
+               </bottom>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,54 @@
+.parent {
+    -fx-background-color: #fff;
+}
+
+.sidebar {
+    -fx-background-color: #333645;
+}
+
+.btns {
+    -fx-background-color: transparent;
+}
+
+.btns:hover {
+    -fx-background-color: #202332;
+}
+
+.painel {
+    -fx-background-color: #fff;
+    -fx-effect: dropshadow( three-pass-box , #000 , 7 , 0 , 1 , 1 );
+}
+
+    .painel:hover {
+        -fx-background-color: #fff;
+        -fx-effect: dropshadow(three-pass-box , #000 , 7 , 0 , 1 , 1);
+        -fx-border-style: solid;
+        -fx-border-width: 1px;
+        -fx-border-color: #006eff;
+    }
+    
+    .painel:pressed {
+        -fx-background-color: #fff;
+        -fx-effect: dropshadow( three-pass-box , #000 , 7 , 0 , 0.1 , 0.1 );
+        -fx-border-style: solid;
+        -fx-border-width: 2px;
+        -fx-border-color: #ff5500;
+    }
+
+.round-box {
+    -fx-background-radius: 100%;
+    -fx-border-radius: 100%;
+    -fx-border-width: 5px;
+    -fx-border-color:  #72D3FE;
+}
+
+.start-border {
+    -fx-background-color: #333645;
+    -fx-border-color: #f4c471;
+    -fx-border-width: 5px;
+    -fx-border-style: solid;
+}
+
+.login {
+    -fx-background-color: #fff;
+}
