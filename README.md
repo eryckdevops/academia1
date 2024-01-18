@@ -31,6 +31,4 @@ O software é destinado aos proprietários de academias que buscam uma forma int
 </p>
 
 ## Desenvolvedor:
-- [Eryck Devops](https://github.com/eryckdevops)
-
-"# academia1" 
+- [Eryck Devops](https://avatars.githubusercontent.com/u/109317442?s=400&u=d0f5ee8bf8ef0d4aa389d665d7647a204b89594a&v=4)
